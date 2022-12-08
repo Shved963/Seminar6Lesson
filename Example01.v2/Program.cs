@@ -11,11 +11,11 @@ int AB = IntoInt();
 int AC = IntoInt();
 int BC = IntoInt();
 
-if (AB == 0 && AC == 0 && BC == 0)
-{
-    Console.WriteLine("Incorrect number");
-    return;
-}
+// if (AB == 0 && AC == 0 && BC == 0)
+// {
+//     Console.WriteLine("Incorrect number");
+//     return;
+// }
 
 bool result = VerificationOfTriangleInequalityTheorem(AB, AC, BC);
 
@@ -38,7 +38,8 @@ int IntoInt()
     bool isParsed = int.TryParse(Console.ReadLine(), out int num);
     if (!isParsed || num < 1)
     {
-        return 0;
+        Console.WriteLine("Incorrect number");
+        return -1;
     }
     else
     {
