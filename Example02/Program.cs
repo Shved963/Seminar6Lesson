@@ -13,7 +13,7 @@ Console.WriteLine($"{number} -> {GetBinNumber(number)}");
 //Методы
 string GetBinNumber(int num)
 {
-    string binar = string.Empty;
+    string binar = string.Empty; // Создаем пустую строчку
 
     while (num != 0)
     {

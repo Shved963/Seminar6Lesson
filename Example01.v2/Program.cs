@@ -23,14 +23,7 @@ Console.WriteLine(result);
 
 bool VerificationOfTriangleInequalityTheorem(int ab, int ac, int bc)
 {
-    if (ab < (ac + bc) && ac < (ab + bc) && bc< (ac + ab))
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return (ab < (ac + bc) && ac < (ab + bc) && bc< (ac + ab)); //если условиен не удовлетворит то будет false
 }
 
 int IntoInt()
